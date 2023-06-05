@@ -1,7 +1,8 @@
 import express, { Request, Response } from 'express'
 import cors from 'cors'
+import { Application } from 'express-serve-static-core'
 
-const app = express()
+const app: Application = express()
 
 app.use(express.json())
 app.use(cors())
