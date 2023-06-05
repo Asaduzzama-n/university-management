@@ -1,6 +1,6 @@
-import express, { Request, Response } from 'express'
+import express, { Application, Request, Response } from 'express'
 import cors from 'cors'
-import { Application } from 'express-serve-static-core'
+import usersRouter from './app/modules/users/users.route'
 
 const app: Application = express()
 
@@ -8,8 +8,9 @@ app.use(express.json())
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('hello world')
-})
+app.use('/api/v1/users/', usersRouter)
 
+app.get('/', async (req: Request, res: Response) => {
+  res.send('Working Successfully')
+})
 export default app
