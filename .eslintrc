@@ -13,16 +13,18 @@
   ],
 
   "rules": {
-    "no-unused-vars": "error",
-    "no-console": "error",
-    "no-unused-expression": "error",
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    // "no-unused-expression": "error",
     "no-undef":"error",
-    "no-unreachable":"error",
-    "consistent-type-definitions": ["error", "type"]
+    "no-unreachable":"error"
+    // "consistent-type-definitions": ["error", "type"]
+    
   },
 
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "node": true
   }
 }

@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "E:\\web_2\\CODE\\university-management\\logs\\winston\\errors\\.308a8bcd0d1da342095568b7794db29580544d8c-audit.json",
+    "files": [
+        {
+            "date": 1686565644004,
+            "name": "E:\\web_2\\CODE\\university-management\\logs\\winston\\errors\\phu-2023-06-12-16-error.log",
+            "hash": "dcb1408235ff0a931020b9b50a777c4a3d7811c1b797f57c14c04c9475fd0319"
+        },
+        {
+            "date": 1686913923904,
+            "name": "E:\\web_2\\CODE\\university-management\\logs\\winston\\errors\\phu-2023-06-16-17-error.log",
+            "hash": "aa8933a10e803f7f496ef336c9ec97e5494809eaabeacbb4d79c4e40e4a6c3a4"
+        },
+        {
+            "date": 1686917895228,
+            "name": "E:\\web_2\\CODE\\university-management\\logs\\winston\\errors\\phu-2023-06-16-18-error.log",
+            "hash": "1cd31a0095eeb50fb9ee20e3de66fab17f02c17e78d1add6028c6da9d708cafa"
+        },
+        {
+            "date": 1687076477285,
+            "name": "E:\\web_2\\CODE\\university-management\\logs\\winston\\errors\\phu-2023-06-18-14-error.log",
+            "hash": "c6d235dceb31ed16ac3074819f27607369faa576698f85d88c6c67cca7165131"
+        },
+        {
+            "date": 1687144860169,
+            "name": "E:\\web_2\\CODE\\university-management\\logs\\winston\\errors\\phu-2023-06-19-09-error.log",
+            "hash": "27b7a067fe4b1d6d557a9c9ee289bdfb690e94bbc78ffaa78bd7faae30d74aff"
+        },
+        {
+            "date": 1687154901588,
+            "name": "E:\\web_2\\CODE\\university-management\\logs\\winston\\errors\\phu-2023-06-19-12-error.log",
+            "hash": "fb00ddf2141a873790a8201c21750d544702d8e4df76927d0ababd546b680515"
+        },
+        {
+            "date": 1687170008317,
+            "name": "E:\\web_2\\CODE\\university-management\\logs\\winston\\errors\\phu-2023-06-19-16-error.log",
+            "hash": "4e644a5555979b01954815d19853a6c96f879c26bfa71d6965233bceb56cadbb"
+        }
+    ],
+    "hashType": "sha256"
+}
