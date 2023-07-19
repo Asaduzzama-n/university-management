@@ -2,7 +2,7 @@ import { Schema, model } from 'mongoose';
 import {
   AcademicSemesterModel,
   IAcademicSemester,
-} from './academicSemester.Interface';
+} from './academicSemester.Interfaces';
 import {
   academicSemesterCodes,
   academicSemesterMonths,
@@ -19,7 +19,7 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
       enum: academicSemesterTitles,
     },
     year: {
-      type: Number,
+      type: String,
       required: true,
     },
     code: {
@@ -40,6 +40,9 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
   },
   {
     timestamps: true,
+    toJSON: {
+      virtuals: true,
+    },
   }
 );
 
