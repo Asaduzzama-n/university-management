@@ -1,9 +1,8 @@
 import express, { Application, NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
-import { UserRoutes } from './app/modules/user/user.route';
-import { AcademicSemesterRoutes } from './app/modules/academicSemester/academicSemester.route';
 import routes from './app/routes';
+import httpStatus from 'http-status';
 
 const app: Application = express();
 
@@ -16,6 +15,23 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/v1/', routes);
 
+app.use(globalErrorHandler);
+
+//handle not found
+app.use((req: Request, res: Response, next: NextFunction) => {
+  res.status(httpStatus.NOT_FOUND).json({
+    success: false,
+    message: 'Not Found!',
+    errorMessage: [
+      {
+        path: req.originalUrl,
+        message: 'API not found!',
+      },
+    ],
+  });
+  next();
+});
+
 // Testing
 
 // app.get('/', async (req: Request, res: Response, next: NextFunction) => {
@@ -26,7 +42,5 @@ app.use('/api/v1/', routes);
 //   //   console.log(x)
 //   // throw new Error('Testing error logger!')
 // });
-
-app.use(globalErrorHandler);
 
 export default app;

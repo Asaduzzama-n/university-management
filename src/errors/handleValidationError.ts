@@ -8,8 +8,8 @@ export default function handleValidationError(
   const errors: IGenericErrorMessage[] = Object.values(err.errors).map(
     (elm: mongoose.Error.ValidatorError | mongoose.Error.CastError) => {
       return {
-        path: elm.path,
-        message: elm.message,
+        path: elm?.path,
+        message: elm?.message,
       };
     }
   );
