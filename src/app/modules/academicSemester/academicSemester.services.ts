@@ -13,7 +13,6 @@ import { IPaginationOptions } from '../../../interfaces/pagination';
 import { IGenericResponse } from '../../../interfaces/common';
 import { PaginationHelpers } from '../../../helpers/paginationHelper';
 import { SortOrder } from 'mongoose';
-import { string } from 'zod';
 
 const createAcademicSemester = async (
   payload: IAcademicSemester
@@ -57,7 +56,7 @@ const getAllSemesters = async (
 
   const andCondition = [];
 
-  console.log(Object.entries(filtersData));
+  // console.log(Object.entries(filtersData));
 
   if (searchTerm) {
     andCondition.push({

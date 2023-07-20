@@ -7,16 +7,16 @@ const router = express.Router();
 
 const moduleRoutes = [
   {
-    path: '/users/',
-    route: UserRoutes,
-  },
-  {
-    path: '/academic-semesters/',
+    path: '/academic-semesters',
     route: AcademicSemesterRoutes,
   },
   {
-    path: '/academic-faculties/',
+    path: '/academic-faculties',
     route: AcademicFacultyRoutes,
+  },
+  {
+    path: '/users',
+    route: UserRoutes,
   },
 ];
 moduleRoutes.forEach(route => {
