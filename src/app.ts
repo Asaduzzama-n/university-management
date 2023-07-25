@@ -3,6 +3,10 @@ import cors from 'cors';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
 import routes from './app/routes';
 import httpStatus from 'http-status';
+import {
+  generateFacultyId,
+  generateStudentId,
+} from './app/modules/user/user.utils';
 
 const app: Application = express();
 
@@ -42,5 +46,17 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 //   //   console.log(x)
 //   // throw new Error('Testing error logger!')
 // });
+
+// const academicSemester = {
+//   year: '2025',
+//   code: '03',
+// };
+
+// const testStudentId = async () => {
+//   const result = await generateFacultyId();
+//   console.log(result);
+// };
+
+// testStudentId();
 
 export default app;
