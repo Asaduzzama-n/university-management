@@ -1,3 +1,4 @@
+import { bloodGroup } from './student.constants';
 import { Model, Types } from 'mongoose';
 import { IAcademicSemester } from '../academicSemester/academicSemester.Interfaces';
 import { IAcademicFaculty } from '../academicFaculty/academicFaculty.Interfaces';
@@ -45,3 +46,12 @@ export type IStudent = {
 };
 
 export type StudentModel = Model<IStudent>;
+
+export type IStudentFilters = {
+  searchTerm?: string;
+  id?: string;
+  bloodGroup?: string;
+  email?: string;
+  contactNo?: string;
+  emergencyContactNo?: string;
+};
