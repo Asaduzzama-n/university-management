@@ -1,3 +1,0 @@
-{Thu Jul 27 2023 2:1:39} [right meow!] error: Cannot read properties of null (reading 'year')
-{Thu Jul 27 2023 2:31:11} [right meow!] error: academicSemester.year.substring is not a function
-{Thu Jul 27 2023 2:47:31} [right meow!] error: E11000 duplicate key error collection: university-management.students index: email_1 dup key: { email: "user@gmail.com" }
