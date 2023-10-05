@@ -12,4 +12,4 @@ router.patch(
   validateRequest(StudentValidation.updateStudentZodSchema),
   StudentController.updateStudent
 );
-export const StudentRoute = router;
+export const StudentRoutes = router;
