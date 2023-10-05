@@ -19,22 +19,22 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/v1/', routes);
 
-app.use(globalErrorHandler);
+// app.use(globalErrorHandler);
 
 //handle not found
-app.use((req: Request, res: Response, next: NextFunction) => {
-  res.status(httpStatus.NOT_FOUND).json({
-    success: false,
-    message: 'Not Found!',
-    errorMessage: [
-      {
-        path: req.originalUrl,
-        message: 'API not found!',
-      },
-    ],
-  });
-  next();
-});
+// app.use((req: Request, res: Response, next: NextFunction) => {
+//   res.status(httpStatus.NOT_FOUND).json({
+//     success: false,
+//     message: 'Not Found!',
+//     errorMessage: [
+//       {
+//         path: req.originalUrl,
+//         message: 'API not found!',
+//       },
+//     ],
+//   });
+//   next();
+// });
 
 // Testing
 
@@ -43,9 +43,10 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 //   //     throw new ApiError(400, 'NEW ERROR')
 //   //   next('ole baba error!')
 //   //   Promise.reject(new Error('Unhandled Promise Rejection'))
-//   //   console.log(x)
+//   console.log(x);
 //   // throw new Error('Testing error logger!')
 // });
+// app.use(globalErrorHandler);
 
 // const academicSemester = {
 //   year: '2025',

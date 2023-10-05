@@ -1,0 +1,4 @@
+{Thu Oct 05 2023 13:19:23} [right meow!] error: E11000 duplicate key error collection: university-management.faculties index: email_1 dup key: { email: "user3@gmail.com" }
+{Thu Oct 05 2023 13:20:30} [right meow!] error: E11000 duplicate key error collection: university-management.faculties index: email_1 dup key: { email: "user3@gmail.com" }
+{Thu Oct 05 2023 13:24:45} [right meow!] error: Faculty validation failed: academicFaculty: Path `academicFaculty` is required., academicDepartment: Path `academicDepartment` is required.
+{Thu Oct 05 2023 13:26:21} [right meow!] error: Faculty validation failed: academicFaculty: Path `academicFaculty` is required., academicDepartment: Path `academicDepartment` is required.
