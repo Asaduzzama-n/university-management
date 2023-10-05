@@ -10,6 +10,20 @@ export type IUser = {
   student?: Types.ObjectId | IStudent;
   faculty?: Types.ObjectId | IFaculty;
   admin?: Types.ObjectId | IAdmin;
+  needPasswordChange: true | false;
 };
 
-export type UserModel = Model<IUser>;
+export interface IUserMethods {
+  isUserExists(
+    id: string
+  ): Promise<Pick<
+    IUser,
+    'id' | 'role' | 'password' | 'needPasswordChange'
+  > | null>;
+  isPasswordMatched(
+    givenPassword: string,
+    hashedPassword: string
+  ): Promise<boolean>;
+}
+
+export type UserModel = Model<IUser, Record<string, never>, IUserMethods>;

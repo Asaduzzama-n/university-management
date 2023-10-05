@@ -1,5 +1,4 @@
 import { Response } from 'express';
-import { IGenericResponse } from '../interfaces/common';
 
 type IApiResponse<T> = {
   statusCode: number;

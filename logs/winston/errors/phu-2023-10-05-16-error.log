@@ -1,0 +1,2 @@
+{Thu Oct 05 2023 16:21:48} [right meow!] error: E11000 duplicate key error collection: university-management.students index: email_1 dup key: { email: "useraaw3@gmail.com" }
+{Thu Oct 05 2023 16:23:55} [right meow!] error: E11000 duplicate key error collection: university-management.students index: email_1 dup key: { email: "useraaw3@gmail.com" }
