@@ -38,6 +38,7 @@ const getSingleAcademicFaculty = catchAsync(
 
 const getAllAcademicFaculties = catchAsync(
   async (req: Request, res: Response) => {
+    console.log(req.user);
     const filters = pick(req.query, academicFacultyFilterableFields);
     const paginationOptions = pick(req.query, paginationConstants);
     const result = await AcademicFacultyService.getAllAcademicFaculties(
